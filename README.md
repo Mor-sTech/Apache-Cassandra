@@ -10,7 +10,7 @@ Utilizar comandos:
 Verifique o funcionamento do container com esse comando:
 - docker ps
 
-##################################################################################################################################
+##########################################################################################################
 
 Gerenciador de Banco utilizado: DevCenter (https://downloads.datastax.com/#devcenter)
 
