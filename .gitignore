@@ -1,0 +1,6 @@
+# Arquivos específicos do Docker Compose
+docker-compose.override.yml
+docker-compose.yml
+
+# Dados persistentes do Cassandra
+cassandra_data/
