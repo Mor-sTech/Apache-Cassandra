@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    ports:
+      - "9042:9042"  # Porta para comunicação CQL nativa
+      - "7000:7000"  # Porta de comunicação de nó para nó
+      - "7001:7001"  # Porta de comunicação de nó para nó (segura)
+      - "7199:7199"  # Porta de JMX
+      - "9160:9160"  # Porta legada para clientes Thrift
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    environment:
+      - MAX_HEAP_SIZE=1G  # Tamanho máximo da heap do Java
+      - HEAP_NEWSIZE=256M  # Tamanho da nova heap do Java
+      - CASSANDRA_SEEDS=127.0.0.1  # Endereços IP dos nós de semente
+      - CASSANDRA_CLUSTER_NAME=MyCluster  # Nome do cluster Cassandra
+      - CASSANDRA_DC=MyDC  # Datacenter do Cassandra
+      - CASSANDRA_RACK=Rack1  # Rack do Cassandra
+
+volumes:
+  cassandra_data:
+    driver: local
