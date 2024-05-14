@@ -12,7 +12,7 @@ Verifique o funcionamento do container com esse comando:
 
 ##########################################################################################################
 
-Gerenciador de Banco utilizado: DevCenter (https://downloads.datastax.com/#devcenter)
+Gerenciador de Banco utilizado: [DevCenter](https://downloads.datastax.com/#devcenter)
 
 Conexão utilizada:
 	Connection name: localhost
