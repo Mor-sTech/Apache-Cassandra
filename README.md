@@ -1,5 +1,5 @@
 # Apache-Cassandra
-Repositório referente a utilização do Apache Cassandra no Projeto.
+Repositório referente a utilização do Apache Cassandra no projeto.
 
 Instalação do Cassandra realizada via Docker:
 
@@ -18,3 +18,11 @@ Conexão utilizada:
 	Connection name: localhost
 	Contact hosts: localhost
 	Native Protocol port: 9042
+ 
+## Equipe
+
+* Jessica Nascimento Pessoa da Silva - 01717533
+* João Guilherme Caetano dos Santos - 01481382
+* João Victor Mendonça da Silva - 01480878
+* Paulo Vinícius Feliciano de Souza - 01618133
+* Rosilene da Silva Lima - 01619051
