@@ -5,11 +5,11 @@ services:
     image: cassandra:latest
     container_name: cassandra
     ports:
-      - "7000:7000"
-      - "7001:7001"
-      - "7199:7199"
-      - "9042:9042"
-      - "9160:9160"
+      - "7000:7000" #Comunicação interna do cluster.
+      - "7001:7001" #Comunicação segura interna do cluster.
+      - "7199:7199" #Comunicação para JMX (Java Management Extensions).
+      - "9042:9042" #Comunicação para CQL (Cassandra Query Language).
+      - "9160:9160" #Interface de comunicação de cliente (usada por Thrift, menos comum atualmente).
     environment:
       - CASSANDRA_CLUSTER_NAME=Cassandra # Nome do cluster Cassandra
       - CASSANDRA_DC=DC1 # Datacenter do Cassandra
